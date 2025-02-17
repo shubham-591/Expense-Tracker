@@ -4,6 +4,7 @@ import ExpenseList from "../components/ExpenseList";
 import ExpenseFilter from "../components/ExpenseFilter";
 import ExpenseSummary from "../components/ExpenseSummary";
 import { ExpenseContext } from "../context/ExpenseContext";
+import { Expense } from "../types/expense";
 
 const Home: React.FC = () => {
     const expenseContext = useContext(ExpenseContext);
