@@ -1,19 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&display=swap');
+
+* {
+  box-sizing: border-box;  
+  font-family: "Lora", serif;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
+    /* font-family: "Lora", serif; */
     margin: 20px;
     padding: 20px;
     background: #f4f4f4;
-  }
-  
-  h2 {
-    color: #333;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 300px;
-    margin-bottom: 14px;
-  }
+}
+
+h2 {
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+  margin-bottom: 14px;
+}
   

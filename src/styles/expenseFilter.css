@@ -1,0 +1,33 @@
+.filter-container {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin: 4px;
+}
+
+.filter-container label {
+    margin: 8px;
+}
+
+.filter-container select {
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.filter-container input {
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-right: 7px;
+}
+
+.filter-container button {
+    padding: 4px;
+    width: 8%;
+    background-color: rgb(213, 158, 158);
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 4px;
+}

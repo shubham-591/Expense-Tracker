@@ -1,0 +1,39 @@
+.expense-form-container {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.expense-form {
+    display: flex;
+    justify-content: center;
+}
+
+.expense-form input {
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.expense-form select {
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.expense-form .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.expense-form button {
+    padding: 5px;
+    width: 20%;
+    background-color: rgb(213, 158, 158);
+    border: 2px solid black;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}

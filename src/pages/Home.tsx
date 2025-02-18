@@ -5,6 +5,7 @@ import ExpenseFilter from "../components/ExpenseFilter";
 import ExpenseSummary from "../components/ExpenseSummary";
 import { ExpenseContext } from "../context/ExpenseContext";
 import { Expense } from "../types/expense";
+import "../styles/home.css";
 
 const Home: React.FC = () => {
     const expenseContext = useContext(ExpenseContext);
@@ -32,7 +33,7 @@ const Home: React.FC = () => {
 
             if (filtered.length === 0 && !alertShown.current) {
                 alertShown.current = true; // Prevent duplicate alerts
-                alert("No expenses found for the selected date.");
+                alert("No expenses found for the selected date and category.");
                 setTimeout(() => (alertShown.current = false), 500); // Reset after a short delay
             }
 
@@ -43,7 +44,7 @@ const Home: React.FC = () => {
 
     return (
         <div>
-            <h2>Track Your Expenses</h2>
+            <h2 className="home-title">Track Your Expenses</h2>
             <ExpenseForm />
             <ExpenseFilter onFilterChange={filterExpenses} />
             <ExpenseList expenses={filteredExpenses.length > 0 ? filteredExpenses : expenses} />

@@ -1,0 +1,12 @@
+/* .expense-container {
+    border: 2px solid black;
+    width: fit-content;
+} */
+
+.expense-item{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+  

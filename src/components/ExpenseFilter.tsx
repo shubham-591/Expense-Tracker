@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "../styles/expenseFilter.css";
+import { categories } from "../constants/categories";
 
 interface ExpenseFilterProps {
   onFilterChange: (category: string, date: string) => void;
@@ -13,13 +15,15 @@ const ExpenseFilter: React.FC<ExpenseFilterProps> = ({ onFilterChange }) => {
   };
 
   return (
-    <div>
+    <div className="filter-container">
       <label>Filter by Category:</label>
       <select value={category} onChange={(e) => setCategory(e.target.value)}>
-        <option value="">All</option>
-        <option value="Food">Food</option>
-        <option value="Transport">Transport</option>
-        <option value="Shopping">Shopping</option>
+        <option value="">All Categories</option>
+        {categories.map((cat) => (
+          <option key={cat} value={cat}>
+            {cat}
+          </option>
+        ))}
       </select>
 
       <label>Filter by Date:</label>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Expense } from "../types/expense";
+import "../styles/expenseSummary.css";
 
 interface ExpenseSummaryProps {
   expenses: Expense[];
@@ -10,7 +11,7 @@ const ExpenseSummary: React.FC<ExpenseSummaryProps> = ({ expenses }) => {
 
   return (
     <div>
-      <h2>Total Expenses: ${totalAmount.toFixed(2)}</h2>
+      <h2 className="summary-title">Total Expenses: Rs. {totalAmount.toFixed(2)}</h2>
     </div>
   );
 };
